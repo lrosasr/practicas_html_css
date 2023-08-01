@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>flexbox</title>
+  <meta charset="UTF-8">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    body{
+      display:flex;
+      width:100%;
+      height:100vh;
+      justify-content:center;
+      align-items:center;
+      padding:50px;
+    }
+    main{
+      display:flex;
+      width:100%;
+      border:1px solid black;
+      padding:10px;
+      font-family: helvetica;
+      flex-direction: column;
+      width: min-content;
+    }
+    section{
+      display:flex;
+      gap: 20px;
+      margin: 10px 0;      
+    }
+    figure img{
+      width: 300px ;
+      
+    }
+    h1{
+      font-weight:normal;
+    }
+    p{
+      padding:10px 0;
+    }
+  </style>
+  </head>
+  <body>
+    <main>
+      <h1>
+        Images Side By Side
+      </h1>
+			<section>
+      <figure>
+          <img src="https://cdn.pixabay.com/photo/2023/06/08/13/04/fichtelbergbahn-8049565_1280.jpg">
+        
+      </figure>
+         <figure>
+          <img src="https://cdn.pixabay.com/photo/2023/07/25/03/01/cat-8148120_1280.jpg">
+        
+      </figure>
+         <figure>
+          <img src="https://cdn.pixabay.com/photo/2013/10/09/02/26/lake-192979_960_720.jpg">
+        
+      </figure>
+      </section>
+      <p>
+        The grid of boxes can also be used to display images side by side
+      </p>
+    </main>
+  </body>
+</html>
