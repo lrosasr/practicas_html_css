@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                display: flex;
+                height: 100vh;
+                background-color: #f3eae3;
+                align-items: center;
+                justify-content: center;
+            }
+            main{
+                box-sizing: content-box;
+                display: flex;
+                background-color: #ffffff;
+                border-radius: 10px;
+                height: 500px;
+                width: 650px;
+                color: #1d262b;
+            }
+            section{
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-around;
+            }
+            section figure{
+                width: 100%;
+                height: 100%;
+            }
+            .imagen{
+                width: 340px;
+                height: 100%;
+                border-radius: 10px 0px 0px 10px;
+            }
+            .perfume{
+                letter-spacing: 7px;
+                color: #979797;
+                font-size: 15px;
+            }
+            section p{
+                font-family:Arial, Helvetica, sans-serif;
+                color: #72727a;
+                font-size: 18px;
+            }
+            h1{
+                letter-spacing: -1px;
+                font-size: 2.5em;
+                line-height: 40px;
+            }
+            h3{
+
+                width: 100%;
+                display: flex;
+                align-items: center;
+                color: #3d8168;
+                font-size: 3em;
+            }
+            h3 span{
+                font-size: 0.3em;
+                color: #72727a;
+                font-weight: normal;
+                text-decoration: line-through;
+                margin-left: 20px;
+            }
+            button{
+                width: 100%;
+                border: 0;
+                border-radius: 10px;
+                background-color: #3d8168;
+                padding: 15px;
+                font-weight: bold;
+                color:white;
+                font-size: 15px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            button svg{
+                height: 20px;
+                width: 20px;
+                margin-right: 10px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <section>
+                <figure><img src="https://cdn.pixabay.com/photo/2017/03/14/11/41/perfume-2142824_960_720.jpg" class="imagen"></figure>
+            </section>
+            <section style="padding: 30px;">
+                <p class="perfume">PERFUME</p>
+                <h1>Gabrielle Essence Eau De Parfum</h1>
+                <p style="line-height: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe nemo error repellat consequuntur.</p>
+                <h3>$149.99 <span>$169.99</span></h3>
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                    <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>Add to Cart</button>
+            </section>
+        </main>
+    </body>
+</html>
