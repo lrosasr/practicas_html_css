@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+  <style>
+    body{
+        padding:40px;
+    }
+    .padre{
+      display:grid;
+      /*grid-template-columns: 200px 200px 200px 200px;*/
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 20px;
+      grid-template-rows: repeat(3, 150px);
+    }
+    .hijo{
+
+        background-color: chartreuse;
+        text-align: center;
+        font-size: 3em;
+        font-weight: bolder;
+    }
+    .hijo6{
+        padding:20px;
+        background-color: magenta;
+        text-align: center;
+        font-size: 3em;
+        font-weight: bolder; 
+        grid-column: span 4; 
+    }
+    .hijo1{
+        padding:20px;
+        background-color: magenta;
+        text-align: center;
+        font-size: 3em;
+        font-weight: bolder; 
+        grid-column: 1/3; 
+    }
+    .hijo2{
+        padding:20px;
+        background-color: magenta;
+        text-align: center;
+        font-size: 3em;
+        font-weight: bolder; 
+        grid-column: 3/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  </style>
+<body>
+
+  <div class="padre">
+    <div class="hijo1">1</div>
+    <div class="hijo2"><h1>palabra</h1></div>
+    <div class="hijo">3</div>
+    <div class="hijo">4</div>
+    <div class="hijo">5</div>
+    <div class="hijo6">6</div>
+    <div class="hijo">7</div>
+    <div class="hijo">8</div>
+    <div class="hijo">9</div>
+    <div class="hijo">10</div>
+    <div class="hijo">11</div>
+    <div class="hijo">12</div>
+  </div>
+  
+</body>
+</html>
