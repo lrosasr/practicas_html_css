@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+</head>
+  <style>
+    *{
+        padding:0;
+        margin:0;
+    }
+    body{
+        display: grid;
+        height: 100vh;
+        grid-gap: 10px;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    header{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        grid-column: span 12;
+        grid-row: span 1;
+        background-color: aqua;
+        width: fit-content;
+    }
+    nav{
+        display: flex;
+        width: 100vw;
+    }
+    nav a{
+        background-color: #ff2a2a;
+        width: 25%;
+        text-align: center;
+    }
+    h1{
+        grid-column: span 12;
+    }
+    main{
+        grid-column: span 8;
+        grid-row: span 6;
+        background-color: blue;
+    }
+    aside{
+        grid-column: span 3;
+        background-color: pink;
+        grid-row: span 6;
+    }
+    footer{
+        grid-column: span 12;
+        background-color: yellow;
+    }
+  </style>
+<body>
+    <header>
+        <h1>encabezado</h1>
+        <nav>
+            <a>Enlace 1</a><a>Enlace 2</a><a>Enlace 3</a><a>Enlace 4</a>
+        </nav>
+    </header>
+    <main>
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
