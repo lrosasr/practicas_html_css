@@ -1,234 +1,99 @@
 <!DOCTYPE html>
-<html>
-	 <head>
-		  <style>
-				*{
-					 margin:0;
-					 padding:0;
-					 font-family: Arial, Helvetica, sans-serif;
-					 color: #fff;
-				}
-				body{
-					 height: 100vh;
-					 background-image: url("https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg");
-					 background-size: 100% 100%;
-					 background-repeat: no-repeat;
-				}
-				header{
-					 display: flex;
-					 flex-flow: column;
-					 align-items: center;
-					 background-color: #000000ab;
-					 border-bottom:2px solid #a4a4a443;
-				}
-				header ul{
-					 display: flex;
-					 list-style: none;
-					 justify-content:center;
-					 width: 100%;
-				}
-				header li{
-					 /* top | left and right | bottom */
-					 font-size: 0.9em;
-					 margin: 5px 50px 5px;
-				}
-				header a{
-					 text-transform: none;
-				}
-				header a:link {
-					 text-decoration: none;
-				}
-				hr{
-					border-right : 0;
-					border-left: 0;
-				}
-				header hr{
-					 width:100%;
-					 color: #9f9f9f77;
-				}
-				header h1{
-					 font-weight: lighter;
-					 width: 100%;
-					 text-align: center;
-					 font-size: 5em;
-					 margin-top:5px;
-				}
-				header svg{
-					 width: 70px;
-					 height: 70px;
-					 margin: 20px;
-				}
-				main{
-					 width: 100%;
-					 display: flex;
-					 justify-content: center;
-					 background-color: #fff;
-					 padding-bottom: 30px;
-				}
-				header button{
-					 margin:10px;
-					 width:max-content;
-					 font-size: 1em;
-					 padding:10px 30px;
-					 border:2px solid #fff;
-					 background-color: rgba(255, 255, 255, 0.222);
-				}
-				section{
-					 width: 50%;
-					 text-align: center;
-					 background-color: #fff;
-					 display: flex;
-					 flex-flow: column nowrap;
-					 justify-content: center;
-				}
-				section h1{
-					 padding-top: 20px;
-					 color: #000;
-					 font-weight: lighter;
-					 font-size: 2em;
-					 margin: 10px;
-				}
-				section ul{
-					display: flex;
-					align-items: center;
-					flex-flow: row nowrap;
-					list-style: none;
-					/* top | right | bottom | left */
-					padding: 12px 0px;
-				}
-				section time{
-					color:#000;
-					width: 100%;
-					text-align: left;
-					display: block;
-					color: rgb(91, 91, 91);
-					font-weight: bold;
-				}
-				section address{
-					color:#000;
-					text-align: left;
-					font-style: normal;
-					color: rgb(127, 127, 127);
-				}
-				.a {
-					width:15%;
-				}
-				.b{
-					width: 25%;
-				}
-				.c{
-					width: 30%;
-				}
-				.d{
-					width:30%;
-				}
-				section button{
-					padding:7px;
-					border: 0;
-					border-radius: 5px;
-					background-color: #56ccf2;
-					font-weight: bold;
-				}
-				footer{
-					display: flex;
-					width: 100%;
-					justify-content: center;
-					align-items: center;
-					background-color: #000;
-					padding: 10px 0px;
-				}
-				footer h1{
-					text-align: left;
-					font-size: 2.8em;
-					width: 50%;
-				}
-				footer img,svg{
-					margin: 0px 13px;
-					width: 25px;
-					height: 25px;
-				}
-				footer .width50{
-					 width: 50%;
-					 height: 100%;
-					 display: flex;
-					 justify-content: center;
-					 align-items: center;
-				}
-				footer .iconos{
-					width:50%;
-					display: flex;
-					justify-content: right;
-				}
-		  </style>
-	 </head>
-	 <body>
-		  <header>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style/styles.css">
+		<title>Proyecto final</title>
+	</head>
+	<body>
+		<header>
+			<ul>
+				<li><a href="#">INICIO</a></li>
+				<li><a href="#">TIENDA</a></li>
+				<li><a href="#">CONOCENOS</a></li>
+			</ul>
+			<hr>
+			<h1>Lorem Ipsum</h1>
+			<button>
+			Escucha nuestro nuevo album
+			</button>
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+				<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+				<path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+			</svg>
+		</header>
+		<main>
+			<section>
+				<h1>TOURS</h1>
 				<ul>
-					 <li><a href="#">INICIO</a></li>
-					 <li><a href="#">TIENDA</a></li>
-					 <li><a href="#">CONOCENOS</a></li>
+					<li class="a"><time>JUL 16</time></li>
+					<li class="b">
+						<address>CDMX, México</address>
+					</li>
+					<li class="c">
+						<address>Foro Sol</address>
+					</li>
+					<li class="d"><button>COMPRAR BOLETOS</button></li>
 				</ul>
 				<hr>
+				<ul>
+					<li class="a"><time>JUL 19</time></li>
+					<li class="b">
+						<address>CDMX, México</address>
+					</li>
+					<li class="c">
+						<address>Foro Lucerna</address>
+					</li>
+					<li class="d"><button>COMPRAR BOLETOS</button></li>
+				</ul>
+				<hr>
+				<ul>
+					<li class="a"><time>JUL 22</time></li>
+					<li class="b">
+						<address>Guadalajara, JAL, México</address>
+					</li>
+					<li class="c">
+						<address>C3 Stage GDL</address>
+					</li>
+					<li class="d"><button>COMPRAR BOLETOS</button></li>
+				</ul>
+				<hr>
+				<ul>
+					<li class="a"><time>AUG 2</time></li>
+					<li class="b">
+						<address>León, GTO, México</address>
+					</li>
+					<li class="c">
+						<address>Auditorio Mateo Herrera</address>
+					</li>
+					<li class="d"><button>COMPRAR BOLETOS</button></li>
+				</ul>
+				<hr>
+				<ul>
+					<li class="a"><time>AUG 7</time></li>
+					<li class="b">
+						<address>CDMX, México</address>
+					</li>
+					<li class="c">
+						<address>Pabellón del Palacio de los Deportes</address>
+					</li>
+					<li class="d"><button>COMPRAR BOLETOS</button></li>
+				</ul>
+			</section>
+		</main>
+		<footer>
+			<div class="width50">
 				<h1>Lorem Ipsum</h1>
-				<button>
-					 Escucha nuestro nuevo album
-				</button>
-				<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-					 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-					 <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-				  </svg>
-		  </header>
-		  <main>
-				<section>
-					<h1>TOURS</h1>
-					<ul>
-						<li class="a"><time>JUL 16</time></li>
-						<li class="b"><address>CDMX, Mexico</address></li>
-						<li class="c"><address>Foro Sol</address></li>
-						<li class="d"><button>COMPRAR BOLETOS</button></li>
-					</ul>
-					<hr>
-					<ul>
-						<li class="a"><time>JUL 16</time></li>
-						<li class="b"><address>CDMX, Mexico</address></li>
-						<li class="c"><address>Foro Sol</address></li>
-						<li class="d"><button>COMPRAR BOLETOS</button></li>
-					</ul>
-					<hr>
-					<ul>
-						<li class="a"><time>JUL 16</time></li>
-						<li class="b"><address>CDMX, Mexico</address></li>
-						<li class="c"><address>Foro Sol</address></li>
-						<li class="d"><button>COMPRAR BOLETOS</button></li>
-					</ul>
-					<hr>
-					<ul>
-						<li class="a"><time>JUL 16</time></li>
-						<li class="b"><address>CDMX, Mexico</address></li>
-						<li class="c"><address>Foro Sol</address></li>
-						<li class="d"><button>COMPRAR BOLETOS</button></li>
-					</ul>
-					<hr>
-					<ul>
-						<li class="a"><time>JUL 16</time></li>
-						<li class="b"><address>CDMX, Mexico</address></li>
-						<li class="c"><address>Foro Sol</address></li>
-						<li class="d"><button>COMPRAR BOLETOS</button></li>
-					</ul>
-
-				</section>
-		  </main>
-		  <footer>
-				<div class="width50">
-					<h1>Lorem Ipsum</h1>
-					<div class="iconos">
-						<img src="https://raw.githubusercontent.com/WebDevSimplified/Introduction-to-Web-Development/master/Introduction%20to%20CSS/Lesson%203/Images/Youtube%20Logo.png" alt="youtube logo">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
-						<path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/></svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-						<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
-					</div>
+				<div class="iconos">
+					<img src="https://raw.githubusercontent.com/WebDevSimplified/Introduction-to-Web-Development/master/Introduction%20to%20CSS/Lesson%203/Images/Youtube%20Logo.png" alt="youtube logo">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+						<path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+						<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+					</svg>
 				</div>
-			</footer>
-	 </body>
+			</div>
+		</footer>
+	</body>
 </html>
